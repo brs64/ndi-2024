@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #003366;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le body prend au moins la hauteur de l'écran */
+    background-image: url('../img/backgroundOcean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    flex: 1;
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #005f99;
+    overflow: hidden;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+.human-body {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+
+
+footer {
+    background-color: #005f99;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

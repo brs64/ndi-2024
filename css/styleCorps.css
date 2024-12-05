@@ -1,0 +1,53 @@
+.human-body{
+    margin-top: 7vh;
+    margin-right: 30vw;
+    position:relative;
+}
+.body-image {
+    border-radius: 10px;
+}
+
+.point {
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: #ff5722;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.point:hover {
+    background-color: #ffab91;
+}
+
+.info-box {
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    width: 25vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    color: #003366;
+    font-size: 18px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}

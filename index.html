@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison Corps Humain & Milieu Marin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparaison : Corps humain et Milieu marin</h1>
+        <div class="human-body">
+            <!-- L'image du corps humain -->
+            <img src="corps-humain.png" alt="Corps humain" class="body-image">
+            
+            <!-- Les points interactifs -->
+            <div class="point" id="lungs" style="top: 30%; left: 45%;" data-info="Les poumons sont comme les coraux ou le plancton : ils filtrent et nourrissent."></div>
+            <div class="point" id="heart" style="top: 50%; left: 50%;" data-info="Le cœur et le système sanguin fonctionnent comme les pompes thermohalines, en circulation constante."></div>
+            <div class="point" id="buttocks" style="top: 80%; left: 48%;" data-info="Les fesses représentent le continent plastique : stockage, souvent non-désiré."></div>
+        </div>
+    </div>
+
+    <!-- Le conteneur du pop-up -->
+    <div id="popup" class="popup hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
