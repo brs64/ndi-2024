@@ -26,6 +26,50 @@ body{
     background-color: #ffab91;
 }
 
+.pointEm {
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: #ff5722;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pointAn {
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: #ff5722;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pointCo {
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: #ff5722;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pointMa {
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: #ff5722;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
 .info-box {
     position: fixed;
     top: 20%;
