@@ -1,3 +1,7 @@
+body{
+    background-image: url('../img/backgroundOcean.jpg');
+}
+
 .human-body{
     margin-top: 7vh;
     margin-right: 30vw;
@@ -24,10 +28,10 @@
 
 .info-box {
     position: fixed;
-    top: 10%;
+    top: 20%;
     right: 2%;
     width: 25vw;
-    height: 70vh;
+    height: 50%;
     background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -40,14 +44,24 @@
 .info-box h3 {
     margin-top: 0;
     color: #003366;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .info-box p {
-    font-size: 14px;
+    font-size: 18px;
     color: #333;
 }
-
+.info-box .info-image {
+    width: 20vw; 
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    margin: 0 auto 10px auto;
+    display: block;
+}
 .hidden {
     display: none;
 }
+
+

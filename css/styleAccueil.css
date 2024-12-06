@@ -1,64 +1,58 @@
-body {
+body, html {
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
 .container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
-.half {
-    position: absolute;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 0, 100% 0, 0 100%); /* Initial clip-path */
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease;
     cursor: pointer;
-    transition: all 0.2 ease-in-out; /* Transition fluide pour tous les changements */
+    clip-path: polygon(100% 0, 0% 0%, 0% 100%, 100% 100%);
 }
 
-.top {
-    background-image: url('../img/homme.jpg'); /* Remplacez par le chemin de l'image pour "Terre" */
+.image-1 {
+    left: 0;
 }
 
-.bottom {
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
-    background-image: url('../img/backgroundOcean.jpg'); /* Remplacez par le chemin de l'image pour "Mer" */
+.image-2 {
+    right: 0;
 }
 
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    clip-path: none;
+    z-index: 10;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style pour les textes */
 .text {
     position: absolute;
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
     font-weight: bold;
     color: white;
-    text-shadow: 2px 2px 5px black;
-}
-
-.text.terre {
-    top: 25%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-}
-
-.text.mer {
-    bottom: 25%;
-    right: 25%;
-    transform: translate(50%, 50%);
-}
-
-/* Classes pour l'animation */
-.expand {
-    transform: scale(1.1); /* Légère augmentation */
-    z-index: 10; /* Placer au-dessus de l'autre */
-    opacity: 1;
-}
-
-.final-expand {
-    transform: scale(2); /* Agrandissement complet */
-    opacity: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }

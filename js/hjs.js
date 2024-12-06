@@ -1,32 +1,22 @@
-function expandAndRedirect(page, section) {
-    const topHalf = document.getElementById('topHalf');
-    const bottomHalf = document.getElementById('bottomHalf');
+const img1 = document.getElementById('img1');
+    const img2 = document.getElementById('img2');
 
-    // Désactiver les clics
-    topHalf.style.pointerEvents = "none";
-    bottomHalf.style.pointerEvents = "none";
-
-    // Cible de l'animation
-    const target = section === 'top' ? topHalf : bottomHalf;
-
-    // Étapes intermédiaires
-    let currentStep = 1; // Étape de départ
-    const totalSteps = 10; // Nombre total d'étapes
-    const scaleIncrement = 0.1; // Incrémentation de la taille par étape
-
-    // Fonction pour gérer chaque étape
-    const animateStep = () => {
-        if (currentStep <= totalSteps) {
-            const scaleValue = 1 + currentStep * scaleIncrement; // Calcul de la taille
-            target.style.transform = `scale(${scaleValue})`; // Appliquer le style
-            currentStep++; // Passer à l'étape suivante
-            setTimeout(animateStep, 100); // Attendre avant la prochaine étape
-        } else {
-            // Redirection après la dernière étape
-            window.location.href = page;
+    // Fonction pour étendre une image au-dessus de l'autre
+    function toggleFullScreen(clickedImage, otherImage, redirectionURL) {
+        clickedImage.classList.toggle('full-screen');
+        if (clickedImage.classList.contains('full-screen')) {
+            otherImage.classList.remove('full-screen');
+            // Redirection après un délai pour voir l'animation
+            setTimeout(() => {
+                window.location.href = redirectionURL;
+            }, 1200); // Délai de 1 seconde (pour que l'animation se termine)
         }
-    };
+    }
 
-    // Lancer l'animation
-    animateStep();
-}
+    img1.addEventListener('click', () => {
+        toggleFullScreen(img1, img2, 'ocean.html');
+    });
+
+    img2.addEventListener('click', () => {
+        toggleFullScreen(img2, img1, 'corps.html');
+    });
