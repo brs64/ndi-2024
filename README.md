@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/brs64/ndi-2024">
-    <img src="img/logoBlank.png" alt="Logo" width="80" height="80">
+    <img src="img/logoBlank.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">Nuit de l'Info 2024 | Groupe Blank</h3>
@@ -36,8 +36,6 @@ Le site propose :
 * Des pistes d’actions concrètes pour participer à la protection de notre planète.
 
 Ensemble, construisons un futur plus durable.
-
-<p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 <!-- Lien Image Markdown -->
 [capture-site]: img/pageHumain.png
